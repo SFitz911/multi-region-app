@@ -3,13 +3,12 @@ runtime: nodejs18
 build:
   commands:
     build:
-      - echo "No build commands needed"
+      - npm install
 run:
   runtime-version: 18
   command: npm start
   network:
     port: 8080
-    env: PORT
   env:
     - name: PORT
       value: "8080"
